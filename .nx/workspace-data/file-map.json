@@ -1,0 +1,522 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.8.14",
+  "deps": {
+    "@nestjs/common": "^10.3.8",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^10.3.8",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/passport": "^10.0.3",
+    "@nestjs/platform-express": "^10.3.8",
+    "@nestjs/typeorm": "^10.0.2",
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.13.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20",
+    "@nx/angular": "^19.5.3",
+    "@nx/esbuild": "^19.5.3",
+    "@nx/jest": "^19.5.3",
+    "@nx/nest": "^19.5.3",
+    "@nx/node": "^19.5.3",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jest": "^29.5.13",
+    "cross-env": "^10.0.0",
+    "jest": "^29.7.0",
+    "nx": "^19.5.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  },
+  "pathMappings": {
+    "@stm/data": [
+      "libs/data/src/index.ts"
+    ],
+    "@stm/auth": [
+      "libs/auth/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".git/logs/HEAD",
+        "hash": "2250076131845452212"
+      },
+      {
+        "file": ".git/hooks/prepare-commit-msg.sample",
+        "hash": "4009645067798984574"
+      },
+      {
+        "file": "task_manager.db",
+        "hash": "10075206895987780115"
+      },
+      {
+        "file": ".git/refs/heads/main",
+        "hash": "8474458007926007471"
+      },
+      {
+        "file": ".git/hooks/pre-commit.sample",
+        "hash": "11101338637945007707"
+      },
+      {
+        "file": ".git/logs/refs/heads/main",
+        "hash": "13168649969171733060"
+      },
+      {
+        "file": ".git/hooks/update.sample",
+        "hash": "1295079477040716104"
+      },
+      {
+        "file": ".git/info/exclude",
+        "hash": "2084763735014985388"
+      },
+      {
+        "file": ".env.example",
+        "hash": "16003304441692687222"
+      },
+      {
+        "file": ".git/objects/04/c31ec300d75ef5e60cd1321b0b32d19b35c455",
+        "hash": "1326610239990870966"
+      },
+      {
+        "file": "README.md",
+        "hash": "13406776865838987952"
+      },
+      {
+        "file": ".git/objects/fb/ce1ed289c8662a3cff8f7989b5c8aeac824ee5",
+        "hash": "9882506932813754513"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "8228603866695288434"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12512185150064200443"
+      },
+      {
+        "file": ".git/hooks/commit-msg.sample",
+        "hash": "11930680668000581900"
+      },
+      {
+        "file": ".nx/workspace-data/nx_files.nxt",
+        "hash": "9595878058451533811"
+      },
+      {
+        "file": ".git/HEAD",
+        "hash": "6460185820263248482"
+      },
+      {
+        "file": ".env",
+        "hash": "16003304441692687222"
+      },
+      {
+        "file": ".git/hooks/fsmonitor-watchman.sample",
+        "hash": "15475994484765122679"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "1642983988386992194"
+      },
+      {
+        "file": ".git/hooks/pre-push.sample",
+        "hash": "9162338802079771221"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "3270514527887491071"
+      },
+      {
+        "file": ".git/index.lock",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "13878268948210605622"
+      },
+      {
+        "file": ".git/index",
+        "hash": "8571584155683415151"
+      },
+      {
+        "file": ".git/hooks/pre-rebase.sample",
+        "hash": "15784748353859782246"
+      },
+      {
+        "file": ".git/hooks/pre-receive.sample",
+        "hash": "8999430056057037490"
+      },
+      {
+        "file": ".git/hooks/pre-merge-commit.sample",
+        "hash": "5691533144974613569"
+      },
+      {
+        "file": ".git/hooks/pre-applypatch.sample",
+        "hash": "1595391782482835178"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "8292030388968768713"
+      },
+      {
+        "file": ".git/hooks/applypatch-msg.sample",
+        "hash": "3740124940738663445"
+      },
+      {
+        "file": ".git/description",
+        "hash": "6589616779641096119"
+      },
+      {
+        "file": ".git/COMMIT_EDITMSG",
+        "hash": "10681356083581819587"
+      },
+      {
+        "file": ".git/config",
+        "hash": "11574904888248710"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "6488390484277293558"
+      },
+      {
+        "file": "package.json",
+        "hash": "10436890089658446996"
+      },
+      {
+        "file": ".git/objects/c9/13a190c17a91554038f7251728b906b06dfea5",
+        "hash": "9683963455437359474"
+      },
+      {
+        "file": ".git/hooks/post-update.sample",
+        "hash": "16498975149454253769"
+      }
+    ],
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "apps/api/jest.config.json",
+          "hash": "9608151895502978334"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "5659370099855615700"
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "775599046178418663",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/audit/audit.controller.ts",
+          "hash": "11744446808743877957",
+          "deps": [
+            "auth"
+          ]
+        },
+        {
+          "file": "apps/api/src/audit/audit.module.ts",
+          "hash": "16954328671391973770",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/audit/audit.service.ts",
+          "hash": "11822313259030440200",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.controller.ts",
+          "hash": "15635801544300149189",
+          "deps": [
+            "data"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.module.ts",
+          "hash": "9999025578782931060",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/auth.service.ts",
+          "hash": "863259482518665712",
+          "deps": [
+            "auth",
+            "data"
+          ]
+        },
+        {
+          "file": "apps/api/src/auth/jwt.strategy.ts",
+          "hash": "10886779539327342547",
+          "deps": [
+            "data"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/organization.entity.ts",
+          "hash": "18446526581139476689",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/permission.entity.ts",
+          "hash": "1857443821235678499",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/role.entity.ts",
+          "hash": "14657474024391780469",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/task.entity.ts",
+          "hash": "1017246259560273507",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/entities/user.entity.ts",
+          "hash": "17842524114648090445",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "3228930235802908588",
+          "deps": [
+            "npm:reflect-metadata",
+            "npm:dotenv",
+            "npm:@nestjs/core",
+            "npm:helmet",
+            "npm:morgan",
+            "npm:cors"
+          ]
+        },
+        {
+          "file": "apps/api/src/orgs/orgs.module.ts",
+          "hash": "9392468747312135965",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/orgs/orgs.service.ts",
+          "hash": "15584131868553926020",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/roles/roles.module.ts",
+          "hash": "2224321132402211415",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/roles/roles.service.ts",
+          "hash": "18071899023342143396",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/seed.ts",
+          "hash": "11252489578324974848",
+          "deps": [
+            "npm:reflect-metadata",
+            "npm:dotenv",
+            "npm:typeorm",
+            "npm:bcryptjs"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.controller.ts",
+          "hash": "9083653172281768077",
+          "deps": [
+            "auth",
+            "data"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.module.ts",
+          "hash": "14318872440007371256",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/tasks/tasks.service.ts",
+          "hash": "13152202500511200214",
+          "deps": [
+            "data"
+          ]
+        },
+        {
+          "file": "apps/api/src/users/users.module.ts",
+          "hash": "355773314220145710",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/src/users/users.service.ts",
+          "hash": "3801519293604712950",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "14160226179232565915"
+        }
+      ],
+      "dashboard": [
+        {
+          "file": "apps/dashboard/jest.config.json",
+          "hash": "13628712369207734771"
+        },
+        {
+          "file": "apps/dashboard/project.json",
+          "hash": "12541445690391173184"
+        },
+        {
+          "file": "apps/dashboard/src/app/api.ts",
+          "hash": "2855148950563788086"
+        },
+        {
+          "file": "apps/dashboard/src/app/mock-ui.md",
+          "hash": "5286819116015815616"
+        },
+        {
+          "file": "apps/dashboard/src/index.html",
+          "hash": "10801460963334621244"
+        },
+        {
+          "file": "apps/dashboard/src/main.ts",
+          "hash": "3292925070511758042"
+        },
+        {
+          "file": "apps/dashboard/src/polyfills.ts",
+          "hash": "10553421156048365859"
+        },
+        {
+          "file": "apps/dashboard/src/styles.css",
+          "hash": "4310296811079412134"
+        },
+        {
+          "file": "apps/dashboard/tsconfig.app.json",
+          "hash": "11786115499888748752"
+        }
+      ],
+      "data": [
+        {
+          "file": "libs/data/project.json",
+          "hash": "46177773126470745"
+        },
+        {
+          "file": "libs/data/src/index.ts",
+          "hash": "8633282836506593233"
+        },
+        {
+          "file": "libs/data/src/lib/dto.ts",
+          "hash": "14375438171023716462"
+        },
+        {
+          "file": "libs/data/src/lib/types.ts",
+          "hash": "15848698129485083380"
+        },
+        {
+          "file": "libs/data/tsconfig.lib.json",
+          "hash": "3954379000157557759"
+        }
+      ],
+      "auth": [
+        {
+          "file": "libs/auth/project.json",
+          "hash": "11398204977217828027"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "9312934142056615171"
+        },
+        {
+          "file": "libs/auth/src/lib/jwt-auth.guard.ts",
+          "hash": "10113171044366119372",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/org-scope.guard.ts",
+          "hash": "15815113123102589958",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/permissions.ts",
+          "hash": "6136964630516222373"
+        },
+        {
+          "file": "libs/auth/src/lib/rbac.guard.ts",
+          "hash": "14174906267387663096",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/roles.decorator.ts",
+          "hash": "16319601423556717482",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "3954379000157557759"
+        }
+      ]
+    }
+  }
+}
