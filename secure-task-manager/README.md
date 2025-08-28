@@ -21,3 +21,5 @@ libs/
 - ...
 
 # secure-task-manager
+
+Use 'npm run seed' -> 'npm run dev:api' to run api and make calls to the backend
