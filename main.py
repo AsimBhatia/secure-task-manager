@@ -864,6 +864,8 @@ libs/
 - RBAC (Owner/Admin/Viewer) with org-scoped access
 - ...
 
+Use 'npm run seed' -> 'npm run dev:api' to run api and make calls to the backend
+
 '''.replace('{ts}', created_ts)
 
 w("README.md", readme_text)
