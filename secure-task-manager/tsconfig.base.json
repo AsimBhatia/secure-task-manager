@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@stm/data": [
+        "libs/data/src/index.ts"
+      ],
+      "@stm/auth": [
+        "libs/auth/src/index.ts"
+      ]
+    }
+  }
+}
